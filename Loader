@@ -5,7 +5,1949 @@ local hwid = decoded.headers["Syn-Fingerprint"]
 
 local check = "https://asxhes.000webhostapp.com/HWIDStore.php?hwid=" .. hwid
 if game:HttpGet(check) == "Whitelisted" then
--- whitelisted script here
+  -- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local UI = Instance.new("ScreenGui")
+local main = Instance.new("Frame")
+local title = Instance.new("TextLabel")
+local featsp = Instance.new("Frame")
+local esp = Instance.new("TextLabel")
+local TextButton = Instance.new("TextButton")
+local UICorner = Instance.new("UICorner")
+local UICorner_2 = Instance.new("UICorner")
+local water = Instance.new("TextLabel")
+local TextButton_2 = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local UICorner_4 = Instance.new("UICorner")
+local infyield = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local antimod = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
+local dashspam = Instance.new("TextLabel")
+local TextButton_3 = Instance.new("TextButton")
+local UICorner_7 = Instance.new("UICorner")
+local UICorner_8 = Instance.new("UICorner")
+local animp = Instance.new("TextButton")
+local UICorner_9 = Instance.new("UICorner")
+local featsm = Instance.new("TextButton")
+local UICorner_10 = Instance.new("UICorner")
+local Frame = Instance.new("Frame")
+local UICorner_11 = Instance.new("UICorner")
+local simplespy = Instance.new("TextButton")
+local UICorner_12 = Instance.new("UICorner")
+local TextBox = Instance.new("TextBox")
+local UICorner_13 = Instance.new("UICorner")
+local tp = Instance.new("TextButton")
+local UICorner_14 = Instance.new("UICorner")
+local infs = Instance.new("TextButton")
+local UICorner_15 = Instance.new("UICorner")
+local goldchest = Instance.new("TextButton")
+local UICorner_16 = Instance.new("UICorner")
+local infa = Instance.new("TextButton")
+local UICorner_17 = Instance.new("UICorner")
+local destroy = Instance.new("TextButton")
+local UICorner_18 = Instance.new("UICorner")
+local line = Instance.new("Frame")
+local Info = Instance.new("TextLabel")
+local Info2 = Instance.new("TextLabel")
+local menu = Instance.new("Frame")
+local featst = Instance.new("TextButton")
+local UICorner_19 = Instance.new("UICorner")
+local farmt = Instance.new("TextButton")
+local UICorner_20 = Instance.new("UICorner")
+local Misc = Instance.new("TextButton")
+local UICorner_21 = Instance.new("UICorner")
+local pagef = Instance.new("Frame")
+local farmingp = Instance.new("Frame")
+local bowf = Instance.new("TextLabel")
+local TextButton_4 = Instance.new("TextButton")
+local UICorner_22 = Instance.new("UICorner")
+local UICorner_23 = Instance.new("UICorner")
+local xlf = Instance.new("TextLabel")
+local TextButton_5 = Instance.new("TextButton")
+local UICorner_24 = Instance.new("UICorner")
+local UICorner_25 = Instance.new("UICorner")
+local DaggerF = Instance.new("TextLabel")
+local TextButton_6 = Instance.new("TextButton")
+local UICorner_26 = Instance.new("UICorner")
+local UICorner_27 = Instance.new("UICorner")
+local Info3 = Instance.new("TextLabel")
+local miscp = Instance.new("Frame")
+local line2 = Instance.new("Frame")
+local cap = Instance.new("TextLabel")
+local ScrollingFrame = Instance.new("ScrollingFrame")
+local Newground = Instance.new("TextButton")
+local UICorner_28 = Instance.new("UICorner")
+local doom = Instance.new("TextButton")
+local UICorner_29 = Instance.new("UICorner")
+local savaria = Instance.new("TextButton")
+local UICorner_30 = Instance.new("UICorner")
+local skyisle = Instance.new("TextButton")
+local UICorner_31 = Instance.new("UICorner")
+local borealis = Instance.new("TextButton")
+local UICorner_32 = Instance.new("UICorner")
+local oblitesco = Instance.new("TextButton")
+local UICorner_33 = Instance.new("UICorner")
+local Altavista = Instance.new("TextButton")
+local UICorner_34 = Instance.new("UICorner")
+local line3 = Instance.new("Frame")
+local line4 = Instance.new("Frame")
+local Islands = Instance.new("TextLabel")
+local seas = Instance.new("TextLabel")
+local thirdsea = Instance.new("TextButton")
+local UICorner_35 = Instance.new("UICorner")
+local secondsea = Instance.new("TextButton")
+local UICorner_36 = Instance.new("UICorner")
+local northwestern = Instance.new("TextButton")
+local UICorner_37 = Instance.new("UICorner")
+local firstsea = Instance.new("TextButton")
+local UICorner_38 = Instance.new("UICorner")
+local ScrollingFrame_2 = Instance.new("ScrollingFrame")
+local icecrown = Instance.new("TextButton")
+local UICorner_39 = Instance.new("UICorner")
+local dawns = Instance.new("TextButton")
+local UICorner_40 = Instance.new("UICorner")
+local mavist = Instance.new("TextButton")
+local UICorner_41 = Instance.new("UICorner")
+local eve = Instance.new("TextButton")
+local UICorner_42 = Instance.new("UICorner")
+local orange = Instance.new("TextButton")
+local UICorner_43 = Instance.new("UICorner")
+local canopy = Instance.new("TextButton")
+local UICorner_44 = Instance.new("UICorner")
+local redwood = Instance.new("TextButton")
+local UICorner_45 = Instance.new("UICorner")
+
+--Properties:
+
+UI.Name = "UI"
+UI.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+UI.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+UI.ResetOnSpawn = false
+
+main.Name = "main"
+main.Parent = UI
+main.AnchorPoint = Vector2.new(0.5, 0.5)
+main.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+main.BorderSizePixel = 0
+main.ClipsDescendants = true
+main.Position = UDim2.new(0.5, 0, 0.5, 0)
+main.Size = UDim2.new(0, 381, 0, 213)
+
+title.Name = "title"
+title.Parent = main
+title.BackgroundColor3 = Color3.fromRGB(139, 139, 139)
+title.BorderSizePixel = 0
+title.Size = UDim2.new(0, 384, 0, 22)
+title.ZIndex = 4
+title.Font = Enum.Font.SourceSans
+title.Text = "   Verdict ™"
+title.TextColor3 = Color3.fromRGB(255, 255, 255)
+title.TextSize = 14.000
+title.TextXAlignment = Enum.TextXAlignment.Left
+
+featsp.Name = "featsp"
+featsp.Parent = main
+featsp.BackgroundColor3 = Color3.fromRGB(139, 139, 139)
+featsp.BorderSizePixel = 0
+featsp.ClipsDescendants = true
+featsp.Position = UDim2.new(0, 92, 0, 30)
+featsp.Size = UDim2.new(0, 282, 0, 177)
+featsp.ZIndex = 4
+
+esp.Name = "esp"
+esp.Parent = featsp
+esp.BackgroundColor3 = Color3.fromRGB(167, 167, 167)
+esp.BorderSizePixel = 0
+esp.Position = UDim2.new(0, 7, 0, 6)
+esp.Size = UDim2.new(0, 82, 0, 26)
+esp.Font = Enum.Font.SourceSans
+esp.Text = "   Chest ESP"
+esp.TextColor3 = Color3.fromRGB(255, 255, 255)
+esp.TextSize = 13.000
+esp.TextXAlignment = Enum.TextXAlignment.Left
+
+TextButton.Parent = esp
+TextButton.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+TextButton.Position = UDim2.new(0.707065463, 0, 0.192307711, 0)
+TextButton.Size = UDim2.new(0, 17, 0, 16)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = ""
+TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.TextSize = 14.000
+
+UICorner.CornerRadius = UDim.new(0, 3)
+UICorner.Parent = TextButton
+
+UICorner_2.CornerRadius = UDim.new(0, 3)
+UICorner_2.Parent = esp
+
+water.Name = "water"
+water.Parent = featsp
+water.BackgroundColor3 = Color3.fromRGB(167, 167, 167)
+water.BorderSizePixel = 0
+water.Position = UDim2.new(0, 7, 0, 39)
+water.Size = UDim2.new(0, 82, 0, 26)
+water.Font = Enum.Font.SourceSans
+water.Text = "      Jesus"
+water.TextColor3 = Color3.fromRGB(255, 255, 255)
+water.TextSize = 13.000
+water.TextXAlignment = Enum.TextXAlignment.Left
+
+TextButton_2.Parent = water
+TextButton_2.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+TextButton_2.Position = UDim2.new(0.707065463, 0, 0.192307711, 0)
+TextButton_2.Size = UDim2.new(0, 17, 0, 16)
+TextButton_2.Font = Enum.Font.SourceSans
+TextButton_2.Text = ""
+TextButton_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_2.TextSize = 14.000
+
+UICorner_3.CornerRadius = UDim.new(0, 3)
+UICorner_3.Parent = TextButton_2
+
+UICorner_4.CornerRadius = UDim.new(0, 3)
+UICorner_4.Parent = water
+
+infyield.Name = "infyield"
+infyield.Parent = featsp
+infyield.BackgroundColor3 = Color3.fromRGB(167, 167, 167)
+infyield.BorderSizePixel = 0
+infyield.Position = UDim2.new(0.678251207, 0, 0.0338983051, 0)
+infyield.Size = UDim2.new(0, 82, 0, 26)
+infyield.Font = Enum.Font.SourceSans
+infyield.Text = "Infinite Yield"
+infyield.TextColor3 = Color3.fromRGB(255, 255, 255)
+infyield.TextSize = 13.000
+
+UICorner_5.CornerRadius = UDim.new(0, 3)
+UICorner_5.Parent = infyield
+
+antimod.Name = "antimod"
+antimod.Parent = featsp
+antimod.BackgroundColor3 = Color3.fromRGB(167, 167, 167)
+antimod.BorderSizePixel = 0
+antimod.Position = UDim2.new(0.680568814, 0, 0.220338985, 0)
+antimod.Size = UDim2.new(0, 82, 0, 26)
+antimod.Font = Enum.Font.SourceSans
+antimod.Text = "Anti Moderator"
+antimod.TextColor3 = Color3.fromRGB(255, 255, 255)
+antimod.TextSize = 13.000
+
+UICorner_6.CornerRadius = UDim.new(0, 3)
+UICorner_6.Parent = antimod
+
+dashspam.Name = "dashspam"
+dashspam.Parent = featsp
+dashspam.BackgroundColor3 = Color3.fromRGB(167, 167, 167)
+dashspam.BorderSizePixel = 0
+dashspam.Position = UDim2.new(0, 7, 0, 74)
+dashspam.Size = UDim2.new(0, 82, 0, 26)
+dashspam.Font = Enum.Font.SourceSans
+dashspam.Text = "     Spam"
+dashspam.TextColor3 = Color3.fromRGB(255, 255, 255)
+dashspam.TextSize = 13.000
+dashspam.TextXAlignment = Enum.TextXAlignment.Left
+
+TextButton_3.Parent = dashspam
+TextButton_3.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+TextButton_3.Position = UDim2.new(0.707065463, 0, 0.192307711, 0)
+TextButton_3.Size = UDim2.new(0, 17, 0, 16)
+TextButton_3.Font = Enum.Font.SourceSans
+TextButton_3.Text = ""
+TextButton_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_3.TextSize = 14.000
+
+UICorner_7.CornerRadius = UDim.new(0, 3)
+UICorner_7.Parent = TextButton_3
+
+UICorner_8.CornerRadius = UDim.new(0, 3)
+UICorner_8.Parent = dashspam
+
+animp.Name = "animp"
+animp.Parent = featsp
+animp.BackgroundColor3 = Color3.fromRGB(167, 167, 167)
+animp.BorderSizePixel = 0
+animp.Position = UDim2.new(0.680568814, 0, 0.418079108, 0)
+animp.Size = UDim2.new(0, 82, 0, 26)
+animp.Font = Enum.Font.SourceSans
+animp.Text = " Animation Packs"
+animp.TextColor3 = Color3.fromRGB(255, 255, 255)
+animp.TextSize = 13.000
+
+UICorner_9.CornerRadius = UDim.new(0, 3)
+UICorner_9.Parent = animp
+
+featsm.Name = "featsm"
+featsm.Parent = featsp
+featsm.BackgroundColor3 = Color3.fromRGB(167, 167, 167)
+featsm.BorderSizePixel = 0
+featsm.Position = UDim2.new(0.0253623128, 0, 0.615819156, 0)
+featsm.Size = UDim2.new(0, 82, 0, 26)
+featsm.Font = Enum.Font.SourceSans
+featsm.Text = "More Features"
+featsm.TextColor3 = Color3.fromRGB(255, 255, 255)
+featsm.TextSize = 13.000
+
+UICorner_10.CornerRadius = UDim.new(0, 3)
+UICorner_10.Parent = featsm
+
+Frame.Parent = featsp
+Frame.BackgroundColor3 = Color3.fromRGB(167, 167, 167)
+Frame.ClipsDescendants = true
+Frame.Position = UDim2.new(0, 99, 0, 6)
+Frame.Size = UDim2.new(0, 86, 0, 164)
+
+UICorner_11.CornerRadius = UDim.new(0, 3)
+UICorner_11.Parent = Frame
+
+simplespy.Name = "simplespy"
+simplespy.Parent = Frame
+simplespy.BackgroundColor3 = Color3.fromRGB(130, 130, 130)
+simplespy.BorderSizePixel = 0
+simplespy.Position = UDim2.new(0, 7, 0, 5)
+simplespy.Size = UDim2.new(0, 72, 0, 28)
+simplespy.Font = Enum.Font.SourceSans
+simplespy.Text = "Simple Spy"
+simplespy.TextColor3 = Color3.fromRGB(255, 255, 255)
+simplespy.TextSize = 13.000
+
+UICorner_12.CornerRadius = UDim.new(0, 3)
+UICorner_12.Parent = simplespy
+
+TextBox.Parent = Frame
+TextBox.BackgroundColor3 = Color3.fromRGB(130, 130, 130)
+TextBox.Position = UDim2.new(0, 7, 0, 41)
+TextBox.Size = UDim2.new(0, 72, 0, 8)
+TextBox.ZIndex = 16
+TextBox.Font = Enum.Font.SourceSans
+TextBox.Text = ""
+TextBox.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextBox.TextSize = 12.000
+
+UICorner_13.CornerRadius = UDim.new(0, 3)
+UICorner_13.Parent = TextBox
+
+tp.Name = "tp"
+tp.Parent = Frame
+tp.BackgroundColor3 = Color3.fromRGB(130, 130, 130)
+tp.BorderSizePixel = 0
+tp.Position = UDim2.new(0, 7, 0, 59)
+tp.Size = UDim2.new(0, 72, 0, 26)
+tp.ZIndex = 16
+tp.Font = Enum.Font.SourceSans
+tp.Text = "Teleport"
+tp.TextColor3 = Color3.fromRGB(255, 255, 255)
+tp.TextSize = 13.000
+
+UICorner_14.CornerRadius = UDim.new(0, 3)
+UICorner_14.Parent = tp
+
+infs.Name = "infs"
+infs.Parent = featsp
+infs.BackgroundColor3 = Color3.fromRGB(167, 167, 167)
+infs.BorderSizePixel = 0
+infs.Position = UDim2.new(0.680568814, 0, 0.615819216, 0)
+infs.Size = UDim2.new(0, 82, 0, 26)
+infs.Font = Enum.Font.SourceSans
+infs.Text = "Inf Stamina"
+infs.TextColor3 = Color3.fromRGB(255, 255, 255)
+infs.TextSize = 13.000
+
+UICorner_15.CornerRadius = UDim.new(0, 3)
+UICorner_15.Parent = infs
+
+goldchest.Name = "goldchest"
+goldchest.Parent = featsp
+goldchest.BackgroundColor3 = Color3.fromRGB(167, 167, 167)
+goldchest.BorderSizePixel = 0
+goldchest.Position = UDim2.new(0, 191, 0, 144)
+goldchest.Size = UDim2.new(0, 81, 0, 26)
+goldchest.ZIndex = 10
+goldchest.Font = Enum.Font.SourceSans
+goldchest.Text = "Gold Chest"
+goldchest.TextColor3 = Color3.fromRGB(255, 255, 255)
+goldchest.TextSize = 13.000
+
+UICorner_16.CornerRadius = UDim.new(0, 3)
+UICorner_16.Parent = goldchest
+
+infa.Name = "infa"
+infa.Parent = featsp
+infa.BackgroundColor3 = Color3.fromRGB(167, 167, 167)
+infa.BorderSizePixel = 0
+infa.Position = UDim2.new(0, 7, 0, 143)
+infa.Size = UDim2.new(0, 82, 0, 27)
+infa.ZIndex = 10
+infa.Font = Enum.Font.SourceSans
+infa.Text = "Inf Air"
+infa.TextColor3 = Color3.fromRGB(255, 255, 255)
+infa.TextSize = 13.000
+
+UICorner_17.CornerRadius = UDim.new(0, 3)
+UICorner_17.Parent = infa
+
+destroy.Name = "destroy"
+destroy.Parent = main
+destroy.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+destroy.Position = UDim2.new(0, 358, 0, 3)
+destroy.Size = UDim2.new(0, 16, 0, 16)
+destroy.ZIndex = 4
+destroy.Font = Enum.Font.SourceSans
+destroy.Text = ""
+destroy.TextColor3 = Color3.fromRGB(0, 0, 0)
+destroy.TextSize = 14.000
+
+UICorner_18.CornerRadius = UDim.new(0, 3)
+UICorner_18.Parent = destroy
+
+line.Name = "line"
+line.Parent = main
+line.BackgroundColor3 = Color3.fromRGB(255, 255, 0)
+line.BorderSizePixel = 0
+line.Position = UDim2.new(0, 0, 0, 22)
+line.Size = UDim2.new(0, 384, 0, 1)
+line.ZIndex = 10
+
+Info.Name = "Info"
+Info.Parent = main
+Info.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Info.BackgroundTransparency = 1.000
+Info.ClipsDescendants = true
+Info.Position = UDim2.new(0.139107615, 0, 0.0187793411, 0)
+Info.Size = UDim2.new(0, 295, 0, 13)
+Info.Visible = false
+Info.ZIndex = 4
+Info.Font = Enum.Font.SourceSans
+Info.Text = "Do not use over level 100 and you have to be over Level 10"
+Info.TextColor3 = Color3.fromRGB(255, 255, 255)
+Info.TextSize = 14.000
+
+Info2.Name = "Info2"
+Info2.Parent = main
+Info2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Info2.BackgroundTransparency = 1.000
+Info2.ClipsDescendants = true
+Info2.Position = UDim2.new(0.139107615, 0, 0.0187793411, 0)
+Info2.Size = UDim2.new(0, 295, 0, 13)
+Info2.Visible = false
+Info2.ZIndex = 4
+Info2.Font = Enum.Font.SourceSans
+Info2.Text = "If nothing happens there are no gold chests."
+Info2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Info2.TextSize = 14.000
+
+menu.Name = "menu"
+menu.Parent = main
+menu.BackgroundColor3 = Color3.fromRGB(139, 139, 139)
+menu.BorderSizePixel = 0
+menu.ClipsDescendants = true
+menu.Position = UDim2.new(0, 0, 0, 22)
+menu.Size = UDim2.new(0, 85, 0, 191)
+menu.ZIndex = 5
+
+featst.Name = "featst"
+featst.Parent = menu
+featst.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+featst.BorderSizePixel = 0
+featst.Position = UDim2.new(0, 4, 0, 8)
+featst.Size = UDim2.new(0, 78, 0, 18)
+featst.ZIndex = 10
+featst.Font = Enum.Font.SourceSans
+featst.Text = "Features"
+featst.TextColor3 = Color3.fromRGB(0, 0, 0)
+featst.TextSize = 13.000
+
+UICorner_19.CornerRadius = UDim.new(0, 3)
+UICorner_19.Parent = featst
+
+farmt.Name = "farmt"
+farmt.Parent = menu
+farmt.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+farmt.BorderSizePixel = 0
+farmt.Position = UDim2.new(0, 3, 0, 30)
+farmt.Size = UDim2.new(0, 79, 0, 17)
+farmt.ZIndex = 10
+farmt.Font = Enum.Font.SourceSans
+farmt.Text = "Farming"
+farmt.TextColor3 = Color3.fromRGB(0, 0, 0)
+farmt.TextSize = 13.000
+
+UICorner_20.CornerRadius = UDim.new(0, 3)
+UICorner_20.Parent = farmt
+
+Misc.Name = "Misc"
+Misc.Parent = menu
+Misc.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Misc.BorderSizePixel = 0
+Misc.Position = UDim2.new(0, 3, 0, 51)
+Misc.Size = UDim2.new(0, 79, 0, 17)
+Misc.ZIndex = 10
+Misc.Font = Enum.Font.SourceSans
+Misc.Text = "Teleports"
+Misc.TextColor3 = Color3.fromRGB(0, 0, 0)
+Misc.TextSize = 13.000
+Misc.TextWrapped = true
+
+UICorner_21.CornerRadius = UDim.new(0, 3)
+UICorner_21.Parent = Misc
+
+pagef.Name = "pagef"
+pagef.Parent = main
+pagef.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+pagef.BorderSizePixel = 0
+pagef.Position = UDim2.new(0, 92, 0, 24)
+pagef.Size = UDim2.new(0, 283, 0, 6)
+pagef.ZIndex = 6
+
+farmingp.Name = "farmingp"
+farmingp.Parent = main
+farmingp.Active = true
+farmingp.BackgroundColor3 = Color3.fromRGB(139, 139, 139)
+farmingp.BorderSizePixel = 0
+farmingp.Position = UDim2.new(0, 93, 0, 30)
+farmingp.Size = UDim2.new(0, 282, 0, 177)
+farmingp.Visible = false
+farmingp.ZIndex = 5
+
+bowf.Name = "bowf"
+bowf.Parent = farmingp
+bowf.BackgroundColor3 = Color3.fromRGB(167, 167, 167)
+bowf.BorderSizePixel = 0
+bowf.Position = UDim2.new(0, 7, 0, 6)
+bowf.Size = UDim2.new(0, 82, 0, 26)
+bowf.Font = Enum.Font.SourceSans
+bowf.Text = "  Bow Farm"
+bowf.TextColor3 = Color3.fromRGB(255, 255, 255)
+bowf.TextSize = 13.000
+bowf.TextXAlignment = Enum.TextXAlignment.Left
+
+TextButton_4.Parent = bowf
+TextButton_4.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+TextButton_4.Position = UDim2.new(0.707065463, 0, 0.192307711, 0)
+TextButton_4.Size = UDim2.new(0, 17, 0, 16)
+TextButton_4.Font = Enum.Font.SourceSans
+TextButton_4.Text = ""
+TextButton_4.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_4.TextSize = 14.000
+
+UICorner_22.CornerRadius = UDim.new(0, 3)
+UICorner_22.Parent = TextButton_4
+
+UICorner_23.CornerRadius = UDim.new(0, 3)
+UICorner_23.Parent = bowf
+
+xlf.Name = "xlf"
+xlf.Parent = farmingp
+xlf.BackgroundColor3 = Color3.fromRGB(167, 167, 167)
+xlf.BorderSizePixel = 0
+xlf.Position = UDim2.new(0, 7, 0, 39)
+xlf.Size = UDim2.new(0, 82, 0, 26)
+xlf.Font = Enum.Font.SourceSans
+xlf.Text = "   XL Farm"
+xlf.TextColor3 = Color3.fromRGB(255, 255, 255)
+xlf.TextSize = 13.000
+xlf.TextXAlignment = Enum.TextXAlignment.Left
+
+TextButton_5.Parent = xlf
+TextButton_5.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+TextButton_5.Position = UDim2.new(0.707065463, 0, 0.192307711, 0)
+TextButton_5.Size = UDim2.new(0, 17, 0, 16)
+TextButton_5.Font = Enum.Font.SourceSans
+TextButton_5.Text = ""
+TextButton_5.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_5.TextSize = 14.000
+
+UICorner_24.CornerRadius = UDim.new(0, 3)
+UICorner_24.Parent = TextButton_5
+
+UICorner_25.CornerRadius = UDim.new(0, 3)
+UICorner_25.Parent = xlf
+
+DaggerF.Name = "DaggerF"
+DaggerF.Parent = farmingp
+DaggerF.BackgroundColor3 = Color3.fromRGB(167, 167, 167)
+DaggerF.BorderSizePixel = 0
+DaggerF.Position = UDim2.new(0, 7, 0, 74)
+DaggerF.Size = UDim2.new(0, 82, 0, 26)
+DaggerF.ZIndex = 15
+DaggerF.Font = Enum.Font.SourceSans
+DaggerF.Text = "   Dagger"
+DaggerF.TextColor3 = Color3.fromRGB(255, 255, 255)
+DaggerF.TextSize = 13.000
+DaggerF.TextXAlignment = Enum.TextXAlignment.Left
+
+TextButton_6.Parent = DaggerF
+TextButton_6.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+TextButton_6.Position = UDim2.new(0.707065463, 0, 0.192307711, 0)
+TextButton_6.Size = UDim2.new(0, 17, 0, 16)
+TextButton_6.Font = Enum.Font.SourceSans
+TextButton_6.Text = ""
+TextButton_6.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_6.TextSize = 14.000
+
+UICorner_26.CornerRadius = UDim.new(0, 3)
+UICorner_26.Parent = TextButton_6
+
+UICorner_27.CornerRadius = UDim.new(0, 3)
+UICorner_27.Parent = DaggerF
+
+Info3.Name = "Info3"
+Info3.Parent = main
+Info3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Info3.BackgroundTransparency = 1.000
+Info3.ClipsDescendants = true
+Info3.Position = UDim2.new(0.165354341, 0, 0.0187793411, 0)
+Info3.Size = UDim2.new(0, 295, 0, 13)
+Info3.Visible = false
+Info3.ZIndex = 4
+Info3.Font = Enum.Font.SourceSans
+Info3.Text = "Do not use when arena isn't open it is loggable."
+Info3.TextColor3 = Color3.fromRGB(255, 255, 255)
+Info3.TextSize = 14.000
+
+miscp.Name = "miscp"
+miscp.Parent = main
+miscp.Active = true
+miscp.BackgroundColor3 = Color3.fromRGB(139, 139, 139)
+miscp.BorderSizePixel = 0
+miscp.Position = UDim2.new(0, 93, 0, 30)
+miscp.Size = UDim2.new(0, 282, 0, 177)
+miscp.Visible = false
+miscp.ZIndex = 5
+
+line2.Name = "line2"
+line2.Parent = miscp
+line2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+line2.BorderSizePixel = 0
+line2.Position = UDim2.new(0, 0, 0, 18)
+line2.Size = UDim2.new(0, 281, 0, 1)
+line2.ZIndex = 10
+
+cap.Name = "cap"
+cap.Parent = miscp
+cap.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+cap.BackgroundTransparency = 1.000
+cap.BorderSizePixel = 0
+cap.Position = UDim2.new(0.0425531901, 0, 0, 0)
+cap.Size = UDim2.new(0, 70, 0, 18)
+cap.ZIndex = 10
+cap.Font = Enum.Font.SourceSans
+cap.Text = "Cap-able "
+cap.TextColor3 = Color3.fromRGB(255, 255, 255)
+cap.TextSize = 13.000
+
+ScrollingFrame.Parent = miscp
+ScrollingFrame.Active = true
+ScrollingFrame.BackgroundColor3 = Color3.fromRGB(167, 167, 167)
+ScrollingFrame.BackgroundTransparency = 1.000
+ScrollingFrame.BorderSizePixel = 0
+ScrollingFrame.Position = UDim2.new(0.347517729, 0, 0.118644066, 0)
+ScrollingFrame.Size = UDim2.new(0, 93, 0, 156)
+ScrollingFrame.ZIndex = 16
+ScrollingFrame.ScrollBarThickness = 0
+
+Newground.Name = "Newground"
+Newground.Parent = ScrollingFrame
+Newground.BackgroundColor3 = Color3.fromRGB(167, 167, 167)
+Newground.Position = UDim2.new(0.0521645732, 0, 0.0151021257, 0)
+Newground.Size = UDim2.new(0, 81, 0, 21)
+Newground.ZIndex = 10
+Newground.Font = Enum.Font.SourceSans
+Newground.Text = "Starter Island"
+Newground.TextColor3 = Color3.fromRGB(255, 255, 255)
+Newground.TextSize = 13.000
+
+UICorner_28.CornerRadius = UDim.new(0, 3)
+UICorner_28.Parent = Newground
+
+doom.Name = "doom"
+doom.Parent = ScrollingFrame
+doom.BackgroundColor3 = Color3.fromRGB(167, 167, 167)
+doom.Position = UDim2.new(0.0629172474, 0, 0.0913733095, 0)
+doom.Size = UDim2.new(0, 81, 0, 21)
+doom.ZIndex = 10
+doom.Font = Enum.Font.SourceSans
+doom.Text = "Doom Island"
+doom.TextColor3 = Color3.fromRGB(255, 255, 255)
+doom.TextSize = 13.000
+
+UICorner_29.CornerRadius = UDim.new(0, 3)
+UICorner_29.Parent = doom
+
+savaria.Name = "savaria"
+savaria.Parent = ScrollingFrame
+savaria.BackgroundColor3 = Color3.fromRGB(167, 167, 167)
+savaria.Position = UDim2.new(0.0629172474, 0, 0.170469344, 0)
+savaria.Size = UDim2.new(0, 81, 0, 21)
+savaria.ZIndex = 10
+savaria.Font = Enum.Font.SourceSans
+savaria.Text = "Savaria"
+savaria.TextColor3 = Color3.fromRGB(255, 255, 255)
+savaria.TextSize = 13.000
+
+UICorner_30.CornerRadius = UDim.new(0, 3)
+UICorner_30.Parent = savaria
+
+skyisle.Name = "skyisle"
+skyisle.Parent = ScrollingFrame
+skyisle.BackgroundColor3 = Color3.fromRGB(167, 167, 167)
+skyisle.Position = UDim2.new(0.0521645583, 0, 0.249565393, 0)
+skyisle.Size = UDim2.new(0, 81, 0, 21)
+skyisle.ZIndex = 10
+skyisle.Font = Enum.Font.SourceSans
+skyisle.Text = "Cumulus Island"
+skyisle.TextColor3 = Color3.fromRGB(255, 255, 255)
+skyisle.TextSize = 13.000
+
+UICorner_31.CornerRadius = UDim.new(0, 3)
+UICorner_31.Parent = skyisle
+
+borealis.Name = "borealis"
+borealis.Parent = ScrollingFrame
+borealis.BackgroundColor3 = Color3.fromRGB(167, 167, 167)
+borealis.Position = UDim2.new(0.0521645546, 0, 0.334311157, 0)
+borealis.Size = UDim2.new(0, 81, 0, 21)
+borealis.ZIndex = 10
+borealis.Font = Enum.Font.SourceSans
+borealis.Text = "Borealis"
+borealis.TextColor3 = Color3.fromRGB(255, 255, 255)
+borealis.TextSize = 13.000
+
+UICorner_32.CornerRadius = UDim.new(0, 3)
+UICorner_32.Parent = borealis
+
+oblitesco.Name = "oblitesco"
+oblitesco.Parent = ScrollingFrame
+oblitesco.BackgroundColor3 = Color3.fromRGB(167, 167, 167)
+oblitesco.Position = UDim2.new(0.0521645546, 0, 0.419056922, 0)
+oblitesco.Size = UDim2.new(0, 81, 0, 21)
+oblitesco.ZIndex = 10
+oblitesco.Font = Enum.Font.SourceSans
+oblitesco.Text = "Oblitesco"
+oblitesco.TextColor3 = Color3.fromRGB(255, 255, 255)
+oblitesco.TextSize = 13.000
+
+UICorner_33.CornerRadius = UDim.new(0, 3)
+UICorner_33.Parent = oblitesco
+
+Altavista.Name = "Altavista"
+Altavista.Parent = ScrollingFrame
+Altavista.BackgroundColor3 = Color3.fromRGB(167, 167, 167)
+Altavista.Position = UDim2.new(0.0521645471, 0, 0.509452403, 0)
+Altavista.Size = UDim2.new(0, 81, 0, 21)
+Altavista.ZIndex = 10
+Altavista.Font = Enum.Font.SourceSans
+Altavista.Text = "Altavista"
+Altavista.TextColor3 = Color3.fromRGB(255, 255, 255)
+Altavista.TextSize = 13.000
+
+UICorner_34.CornerRadius = UDim.new(0, 3)
+UICorner_34.Parent = Altavista
+
+line3.Name = "line3"
+line3.Parent = miscp
+line3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+line3.BorderSizePixel = 0
+line3.Position = UDim2.new(0, 93, 0, 0)
+line3.Size = UDim2.new(0, 1, 0, 177)
+line3.ZIndex = 16
+
+line4.Name = "line4"
+line4.Parent = miscp
+line4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+line4.BorderSizePixel = 0
+line4.Position = UDim2.new(0, 190, 0, 0)
+line4.Size = UDim2.new(0, 1, 0, 177)
+line4.ZIndex = 10
+
+Islands.Name = "Islands"
+Islands.Parent = miscp
+Islands.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Islands.BackgroundTransparency = 1.000
+Islands.BorderSizePixel = 0
+Islands.Position = UDim2.new(0.386524826, 0, 0, 0)
+Islands.Size = UDim2.new(0, 70, 0, 18)
+Islands.ZIndex = 10
+Islands.Font = Enum.Font.SourceSans
+Islands.Text = "Islands"
+Islands.TextColor3 = Color3.fromRGB(255, 255, 255)
+Islands.TextSize = 13.000
+
+seas.Name = "seas"
+seas.Parent = miscp
+seas.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+seas.BackgroundTransparency = 1.000
+seas.BorderSizePixel = 0
+seas.Position = UDim2.new(0.712765932, 0, 0.00564971752, 0)
+seas.Size = UDim2.new(0, 70, 0, 18)
+seas.ZIndex = 10
+seas.Font = Enum.Font.SourceSans
+seas.Text = "Seas"
+seas.TextColor3 = Color3.fromRGB(255, 255, 255)
+seas.TextSize = 13.000
+
+thirdsea.Name = "thirdsea"
+thirdsea.Parent = miscp
+thirdsea.BackgroundColor3 = Color3.fromRGB(167, 167, 167)
+thirdsea.Position = UDim2.new(0.695035458, 0, 0.451977402, 0)
+thirdsea.Size = UDim2.new(0, 81, 0, 20)
+thirdsea.ZIndex = 10
+thirdsea.Font = Enum.Font.SourceSans
+thirdsea.Text = "Third Sea"
+thirdsea.TextColor3 = Color3.fromRGB(255, 255, 255)
+thirdsea.TextSize = 13.000
+
+UICorner_35.CornerRadius = UDim.new(0, 2)
+UICorner_35.Parent = thirdsea
+
+secondsea.Name = "secondsea"
+secondsea.Parent = miscp
+secondsea.BackgroundColor3 = Color3.fromRGB(167, 167, 167)
+secondsea.Position = UDim2.new(0.695035458, 0, 0.293785304, 0)
+secondsea.Size = UDim2.new(0, 81, 0, 21)
+secondsea.ZIndex = 10
+secondsea.Font = Enum.Font.SourceSans
+secondsea.Text = "Second Sea"
+secondsea.TextColor3 = Color3.fromRGB(255, 255, 255)
+secondsea.TextSize = 13.000
+
+UICorner_36.CornerRadius = UDim.new(0, 2)
+UICorner_36.Parent = secondsea
+
+northwestern.Name = "northwestern"
+northwestern.Parent = miscp
+northwestern.BackgroundColor3 = Color3.fromRGB(167, 167, 167)
+northwestern.Position = UDim2.new(0.695035458, 0, 0.615819216, 0)
+northwestern.Size = UDim2.new(0, 81, 0, 20)
+northwestern.ZIndex = 10
+northwestern.Font = Enum.Font.SourceSans
+northwestern.Text = "Northwestern"
+northwestern.TextColor3 = Color3.fromRGB(255, 255, 255)
+northwestern.TextSize = 13.000
+
+UICorner_37.CornerRadius = UDim.new(0, 2)
+UICorner_37.Parent = northwestern
+
+firstsea.Name = "firstsea"
+firstsea.Parent = miscp
+firstsea.BackgroundColor3 = Color3.fromRGB(167, 167, 167)
+firstsea.Position = UDim2.new(0.695035458, 0, 0.12994349, 0)
+firstsea.Size = UDim2.new(0, 81, 0, 22)
+firstsea.ZIndex = 10
+firstsea.Font = Enum.Font.SourceSans
+firstsea.Text = "First Sea"
+firstsea.TextColor3 = Color3.fromRGB(255, 255, 255)
+firstsea.TextSize = 13.000
+
+UICorner_38.CornerRadius = UDim.new(0, 2)
+UICorner_38.Parent = firstsea
+
+ScrollingFrame_2.Parent = miscp
+ScrollingFrame_2.Active = true
+ScrollingFrame_2.BackgroundColor3 = Color3.fromRGB(167, 167, 167)
+ScrollingFrame_2.BackgroundTransparency = 1.000
+ScrollingFrame_2.BorderSizePixel = 0
+ScrollingFrame_2.Position = UDim2.new(-0.00354609918, 0, 0.118644066, 0)
+ScrollingFrame_2.Size = UDim2.new(0, 88, 0, 156)
+ScrollingFrame_2.ZIndex = 16
+ScrollingFrame_2.ScrollBarThickness = 0
+
+icecrown.Name = "icecrown"
+icecrown.Parent = ScrollingFrame_2
+icecrown.BackgroundColor3 = Color3.fromRGB(167, 167, 167)
+icecrown.Position = UDim2.new(0.0909090936, 0, 0.509452403, 0)
+icecrown.Size = UDim2.new(0, 81, 0, 21)
+icecrown.ZIndex = 10
+icecrown.Font = Enum.Font.SourceSans
+icecrown.Text = "Ice Crown Island"
+icecrown.TextColor3 = Color3.fromRGB(255, 255, 255)
+icecrown.TextSize = 13.000
+icecrown.TextWrapped = true
+
+UICorner_39.CornerRadius = UDim.new(0, 3)
+UICorner_39.Parent = icecrown
+
+dawns.Name = "dawns"
+dawns.Parent = ScrollingFrame_2
+dawns.BackgroundColor3 = Color3.fromRGB(167, 167, 167)
+dawns.Position = UDim2.new(0.0909090936, 0, 0.419056952, 0)
+dawns.Size = UDim2.new(0, 81, 0, 21)
+dawns.ZIndex = 10
+dawns.Font = Enum.Font.SourceSans
+dawns.Text = "Dawns Refuge"
+dawns.TextColor3 = Color3.fromRGB(255, 255, 255)
+dawns.TextSize = 13.000
+dawns.TextWrapped = true
+
+UICorner_40.CornerRadius = UDim.new(0, 3)
+UICorner_40.Parent = dawns
+
+mavist.Name = "mavist"
+mavist.Parent = ScrollingFrame_2
+mavist.BackgroundColor3 = Color3.fromRGB(167, 167, 167)
+mavist.Position = UDim2.new(0.0909090936, 0, 0.334311187, 0)
+mavist.Size = UDim2.new(0, 81, 0, 21)
+mavist.ZIndex = 10
+mavist.Font = Enum.Font.SourceSans
+mavist.Text = "Mavist Island"
+mavist.TextColor3 = Color3.fromRGB(255, 255, 255)
+mavist.TextSize = 13.000
+mavist.TextWrapped = true
+
+UICorner_41.CornerRadius = UDim.new(0, 3)
+UICorner_41.Parent = mavist
+
+eve.Name = "eve"
+eve.Parent = ScrollingFrame_2
+eve.BackgroundColor3 = Color3.fromRGB(167, 167, 167)
+eve.Position = UDim2.new(0.0795454532, 0, 0.249565423, 0)
+eve.Size = UDim2.new(0, 81, 0, 21)
+eve.ZIndex = 10
+eve.Font = Enum.Font.SourceSans
+eve.Text = "Eve Island"
+eve.TextColor3 = Color3.fromRGB(255, 255, 255)
+eve.TextSize = 13.000
+eve.TextWrapped = true
+
+UICorner_42.CornerRadius = UDim.new(0, 3)
+UICorner_42.Parent = eve
+
+orange.Name = "orange"
+orange.Parent = ScrollingFrame_2
+orange.BackgroundColor3 = Color3.fromRGB(167, 167, 167)
+orange.Position = UDim2.new(0.0909090936, 0, 0.170469373, 0)
+orange.Size = UDim2.new(0, 81, 0, 21)
+orange.ZIndex = 10
+orange.Font = Enum.Font.SourceSans
+orange.Text = "Orange Island"
+orange.TextColor3 = Color3.fromRGB(255, 255, 255)
+orange.TextSize = 13.000
+orange.TextWrapped = true
+
+UICorner_43.CornerRadius = UDim.new(0, 3)
+UICorner_43.Parent = orange
+
+canopy.Name = "canopy"
+canopy.Parent = ScrollingFrame_2
+canopy.BackgroundColor3 = Color3.fromRGB(167, 167, 167)
+canopy.Position = UDim2.new(0.0795454532, 0, 0.0913733244, 0)
+canopy.Size = UDim2.new(0, 81, 0, 21)
+canopy.ZIndex = 10
+canopy.Font = Enum.Font.SourceSans
+canopy.Text = "Canopy Island"
+canopy.TextColor3 = Color3.fromRGB(255, 255, 255)
+canopy.TextSize = 13.000
+canopy.TextWrapped = true
+
+UICorner_44.CornerRadius = UDim.new(0, 3)
+UICorner_44.Parent = canopy
+
+redwood.Name = "redwood"
+redwood.Parent = ScrollingFrame_2
+redwood.BackgroundColor3 = Color3.fromRGB(167, 167, 167)
+redwood.Position = UDim2.new(0.0795454532, 0, 0.0151021322, 0)
+redwood.Size = UDim2.new(0, 81, 0, 21)
+redwood.ZIndex = 10
+redwood.Font = Enum.Font.SourceSans
+redwood.Text = "Redwood Island"
+redwood.TextColor3 = Color3.fromRGB(255, 255, 255)
+redwood.TextSize = 13.000
+redwood.TextWrapped = true
+
+UICorner_45.CornerRadius = UDim.new(0, 3)
+UICorner_45.Parent = redwood
+
+-- Scripts:
+
+local function ADEXME_fake_script() -- UI.intro 
+	local script = Instance.new('LocalScript', UI)
+
+	local main = script.Parent.main
+	local off = UDim2.new(0, 0,0, 16)
+	local ends = UDim2.new(0, 381,0, 213)
+	local title = main.title
+	local off2 = UDim2.new(0, 0,0, 22)
+	local titlesi = UDim2.new(0, 384,0, 22)
+	
+	local frame = main.featsp
+	local off3 = UDim2.new(0, 367,0, 0)
+	local off4 = UDim2.new(0, 90,0, 0)
+	local menusi = UDim2.new(0, 90,0, 191)
+	local framesi = UDim2.new(0, 381,0, 213)
+	local UI = script.Parent
+	UI.ResetOnSpawn = false
+	
+	main.Size = off2
+	title.Size = off2
+	
+	
+	
+	wait(1)
+	main:TweenSize(titlesi, "InOut", "Sine", .25)
+	title:TweenSize(titlesi, "InOut", "Sine", .25)
+	wait(1.24)
+	main:TweenSize(framesi, "InOut", "Sine", .25)
+	
+	
+end
+coroutine.wrap(ADEXME_fake_script)()
+local function MUELKL_fake_script() -- main.Dragify 
+	local script = Instance.new('LocalScript', main)
+
+	local UIS = game:GetService("UserInputService")
+	function dragify(Frame)
+	    dragToggle = nil
+	    local dragSpeed = 0.25
+	    dragInput = nil
+	    dragStart = nil
+	    local dragPos = nil
+	    function updateInput(input)
+	        local Delta = input.Position - dragStart
+	        local Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + Delta.X, startPos.Y.Scale, startPos.Y.Offset + Delta.Y)
+	        game:GetService("TweenService"):Create(Frame, TweenInfo.new(0.25), {Position = Position}):Play()
+	    end
+	    Frame.InputBegan:Connect(function(input)
+	        if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) and UIS:GetFocusedTextBox() == nil then
+	            dragToggle = true
+	            dragStart = input.Position
+	            startPos = Frame.Position
+	            input.Changed:Connect(function()
+	                if input.UserInputState == Enum.UserInputState.End then
+	                    dragToggle = false
+	                end
+	            end)
+	        end
+	    end)
+	    Frame.InputChanged:Connect(function(input)
+	        if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+	            dragInput = input
+	        end
+	    end)
+	    game:GetService("UserInputService").InputChanged:Connect(function(input)
+	        if input == dragInput and dragToggle then
+	            updateInput(input)
+	        end
+	    end)
+	end
+	
+	dragify(script.Parent)
+end
+coroutine.wrap(MUELKL_fake_script)()
+local function GGRS_fake_script() -- TextButton.LocalScript 
+	local script = Instance.new('LocalScript', TextButton)
+
+	local ChestFolder = workspace:FindFirstChild("Chest", true).Parent
+	_G.Toggle = false
+	local btn = script.Parent
+	
+	btn.MouseButton1Click:Connect(function()
+		if _G.Toggle == false then
+			_G.Toggle = true
+			game.StarterGui:SetCore("SendNotification", {
+				Title = "Verdict™";
+				Text = "Chest ESP is Enabled.";
+				Icon = "http://www.roblox.com/asset/?id=7394339207";
+				Duration = "2";
+			})
+			btn.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
+		for i, v in pairs (ChestFolder:GetChildren()) do
+			if v.Name == "Chest" then
+				local box = Instance.new("BoxHandleAdornment", v)
+					box.Size = v.Size 
+					box.Name = "ESP"
+					box.ZIndex = 4
+					box.Adornee = v 
+					box.Transparency = 0.5
+					box.Color3 = Color3.fromRGB(0, 255, 0)
+					box.AlwaysOnTop = true
+					end
+			end
+		elseif _G.Toggle == true then
+			_G.Toggle = false
+			game.StarterGui:SetCore("SendNotification", {
+				Title = "Verdict™";
+				Text = "Chest ESP is Disabled.";
+				Icon = "http://www.roblox.com/asset/?id=7394339207";
+				Duration = "2";
+			})
+			btn.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+			for i, v in pairs(ChestFolder:GetChildren()) do
+				if v.Name == "Chest" then
+					for i, v in pairs (v:GetChildren()) do
+						if v:IsA("BoxHandleAdornment") and v.Name == "ESP" then
+							v:Destroy()
+						end
+					end
+				end
+			end
+		end
+	end)
+end
+coroutine.wrap(GGRS_fake_script)()
+local function XIMHP_fake_script() -- TextButton_2.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_2)
+
+	_G.Toggles = false
+	local Player = game:GetService("Players").LocalPlayer
+	local Button = script.Parent
+	
+	Button.MouseButton1Click:Connect(function()
+	
+		if _G.Toggles == false then
+			_G.Toggles = true
+			game.StarterGui:SetCore("SendNotification", {
+				Title = "Verdict™";
+				Text = "Walk on Water is Enabled.";
+				Icon = "http://www.roblox.com/asset/?id=7394339207";
+				Duration = "2";
+			})
+			Button.BackgroundColor3 = Color3.new(0, 255, 0)
+			workspace.Env.Ocean.CanCollide = true
+			workspace.Env.Ocean.Size = Vector3.new(2000, 1, 2000)
+			workspace.Env.Ocean.Mesh.Scale = Vector3.new(1, 1, 1)
+	
+			game:GetService("RunService").RenderStepped:Connect(function()
+				workspace.Env.Ocean.Position = Vector3.new(game.Players.LocalPlayer.Character.HumanoidRootPart.Position.X, 430,game.Players.LocalPlayer.Character.HumanoidRootPart.Position.Z)
+	
+	
+	
+	
+			end)
+		elseif _G.Toggles == true then
+			_G.Toggles = false
+			game.StarterGui:SetCore("SendNotification", {
+				Title = "Verdict™";
+				Text = "Walk on Water is Disabled.";
+				Icon = "http://www.roblox.com/asset/?id=7394339207";
+				Duration = "2";
+			})
+			Button.BackgroundColor3 = Color3.new(1, 0, 0)
+			workspace.Env.Ocean.CanCollide = false
+			workspace.Env.Ocean.Size = Vector3.new(2000, 1, 2000)
+			workspace.Env.Ocean.Mesh.Scale = Vector3.new(1, 1, 1)
+	
+			game:GetService("RunService").RenderStepped:Connect(function()
+				workspace.Env.Ocean.Position = Vector3.new(game.Players.LocalPlayer.Character.HumanoidRootPart.Position.X, 430,game.Players.LocalPlayer.Character.HumanoidRootPart.Position.Z)
+			end)
+		end
+	end)
+end
+coroutine.wrap(XIMHP_fake_script)()
+local function UVYUVQ_fake_script() -- infyield.LocalScript 
+	local script = Instance.new('LocalScript', infyield)
+
+	local btn = script.Parent
+	
+	btn.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+	end)
+end
+coroutine.wrap(UVYUVQ_fake_script)()
+local function LJMEO_fake_script() -- TextButton_3.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_3)
+
+	Toggled = false
+	local Player = game:GetService("Players").LocalPlayer
+	local Button = script.Parent
+	
+	Button.MouseButton1Click:Connect(function()
+		if Toggled == false then
+			Toggled = true
+			Button.BackgroundColor3 = Color3.fromRGB(0, 255, 0)		
+			while wait() do
+				if Toggled == true then
+					local args = {
+						[1] = "Dodge",
+						[2] = "Forward",
+						[3] = CFrame.new(Vector3.new(-15422.284179688, 527.66296386719, -4620.3940429688), Vector3.new(0.51469433307648, -0.17224350571632, 0.83989399671555))
+					}
+	
+					game:GetService("ReplicatedStorage").Remotes.ServerEffects:FireServer(unpack(args))
+				end						
+			end
+		elseif Toggled == true then
+			Toggled = false
+			Button.BackgroundColor3 = Color3.fromRGB(255, 0, 0)		
+	
+		end
+	end)
+end
+coroutine.wrap(LJMEO_fake_script)()
+local function UDYRFKL_fake_script() -- animp.LocalScript 
+	local script = Instance.new('LocalScript', animp)
+
+	local Player = game:GetService("Players").LocalPlayer
+	local Button = script.Parent
+	
+	Button.MouseButton1Click:Connect(function()
+		pcall(function()
+			Player.bin.HasMoonwalkPack.Value = true
+			Player.bin.HasCowardPack.Value  = true
+			Player.bin.HasBossPack.Value = true
+			Player.bin.HasAthleticPack.Value  = true
+			Player.bin.HasSorcererPack.Value = true
+		end)
+	end)
+end
+coroutine.wrap(UDYRFKL_fake_script)()
+local function PXILX_fake_script() -- featsm.LocalScript 
+	local script = Instance.new('LocalScript', featsm)
+
+	local btn = script.Parent
+	local frame = script.Parent.Parent.Frame
+	local off = UDim2.new(0, 86,0, 0)
+	local framen = UDim2.new(0, 86,0, 164)
+	frame.Size = off
+	frame.Visible = false
+	
+	btn.MouseButton1Click:Connect(function()
+		frame.Visible = true
+		frame:TweenSize(framen, "InOut", "Sine", .14 )
+	end)
+end
+coroutine.wrap(PXILX_fake_script)()
+local function JEBVCQP_fake_script() -- simplespy.LocalScript 
+	local script = Instance.new('LocalScript', simplespy)
+
+	local btn = script.Parent
+	
+	btn.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://github.com/exxtremestuffs/SimpleSpySource/raw/master/SimpleSpy.lua"))()
+	end)
+end
+coroutine.wrap(JEBVCQP_fake_script)()
+local function PPKL_fake_script() -- tp.LocalScript 
+	local script = Instance.new('LocalScript', tp)
+
+	local btn = script.Parent
+	local txt = script.Parent.Parent.TextBox
+	local plr = game.Players.LocalPlayer
+	
+	btn.MouseButton1Click:Connect(function()
+		plr.Character.HumanoidRootPart.CFrame = game.Players[txt.Text].Character.HumanoidRootPart.CFrame
+	end)
+end
+coroutine.wrap(PPKL_fake_script)()
+local function WKPPXS_fake_script() -- infs.LocalScript 
+	local script = Instance.new('LocalScript', infs)
+
+	local InfS = script.Parent
+	
+	InfS.MouseButton1Click:Connect(function()
+		pcall(function()
+			while wait() do 
+				local Player = game:GetService("Players").LocalPlayer
+				Player.bin.Stamina.Value = math.huge or 1000000000
+			end
+		end)
+	end)
+end
+coroutine.wrap(WKPPXS_fake_script)()
+local function YAYLBOR_fake_script() -- goldchest.LocalScript 
+	local script = Instance.new('LocalScript', goldchest)
+
+	local btn = script.Parent
+	
+	btn.MouseButton1Click:Connect(function()
+	for i, v in pairs(game.Workspace:GetChildren()) do
+		if v:IsA("Folder") then
+				for i, s in pairs(v:GetChildren()) do
+					pcall(function()
+				if s.Name == "Chest" and s.Type.Value == "Gold" then
+							game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(s.Position)
+								else
+							print("No gold chests in this server!")
+						end
+					end)
+				end
+			end
+		end
+	end)
+	
+end
+coroutine.wrap(YAYLBOR_fake_script)()
+local function ONIU_fake_script() -- goldchest.LocalScript 
+	local script = Instance.new('LocalScript', goldchest)
+
+	local lbl = script.Parent
+	local Info = script.Parent.Parent.Parent.Info2
+	local off = UDim2.new(0, 6,0, 13)
+	Info.Size = off
+	Info.Visible = false
+	local normsize = UDim2.new(0, 295,0, 13)
+	
+	lbl.MouseEnter:Connect(function()
+		Info.Visible = true
+		Info:TweenSize(normsize, "InOut", "Sine", 0.14)
+		lbl.MouseLeave:Connect(function()
+			Info.Visible = false
+			Info.Size = off
+		end)
+	end)
+end
+coroutine.wrap(ONIU_fake_script)()
+local function XBRP_fake_script() -- infa.LocalScript 
+	local script = Instance.new('LocalScript', infa)
+
+	local InfS = script.Parent
+	
+	InfS.MouseButton1Click:Connect(function()
+		pcall(function()
+			while wait() do 
+				local Player = game:GetService("Players").LocalPlayer
+				Player.bin.Air.Value = math.huge or 1000000000
+			end
+		end)
+	end)
+end
+coroutine.wrap(XBRP_fake_script)()
+local function JGFDIMV_fake_script() -- destroy.LocalScript 
+	local script = Instance.new('LocalScript', destroy)
+
+	local btn = script.Parent
+	local main = script.Parent.Parent.Parent.main
+	local news = UDim2.new(0, 381,0, 23)
+	
+	btn.MouseButton1Click:Connect(function()
+		main:TweenSize(news, "InOut", "Sine", 0.14)
+		wait(.25)
+		main:TweenSize(UDim2.new(0, 16,0, 16), "InOut", "Sine", 0.14)
+		wait(.16)
+		main:Destroy()
+	end)
+end
+coroutine.wrap(JGFDIMV_fake_script)()
+local function ICMEAEY_fake_script() -- featst.LocalScript 
+	local script = Instance.new('LocalScript', featst)
+
+	local btn = script.Parent
+	local featsp = script.Parent.Parent.Parent.Parent.main.featsp
+	local pagef = script.Parent.Parent.Parent.pagef
+	local off = UDim2.new(0, 283,0, 6)
+	local newsize = UDim2.new(0, 283,0, 183)
+	pagef.Size = off
+	local farmingp = script.Parent.Parent.Parent.farmingp
+	local miscp = script.Parent.Parent.Parent.Parent.main.miscp
+	farmingp.Visible = false
+	
+	btn.MouseButton1Click:Connect(function()
+		if farmingp.Visible == true or miscp.Visible == true then
+			pagef:TweenSize(newsize, "InOut", "Sine", .14)
+			wait(.15)
+			pagef:TweenSize(off, "InOut", "Sine", .14)
+			featsp.Visible = true
+			featsp.ZIndex = 5
+			farmingp.Visible = false
+			miscp.Visible = false
+	
+		end
+	end)
+end
+coroutine.wrap(ICMEAEY_fake_script)()
+local function DVBYBY_fake_script() -- farmt.LocalScript 
+	local script = Instance.new('LocalScript', farmt)
+
+	local btn = script.Parent
+	local featsp = script.Parent.Parent.Parent.Parent.main.featsp
+	local misc = script.Parent.Parent.Parent.Parent.main.miscp
+	local pagef = script.Parent.Parent.Parent.pagef
+	local off = UDim2.new(0, 283,0, 6)
+	local newsize = UDim2.new(0, 283,0, 183)
+	pagef.Size = off
+	local farmingp = script.Parent.Parent.Parent.farmingp
+	farmingp.Visible = false
+	
+	btn.MouseButton1Click:Connect(function()
+		if featsp.Visible == true or misc.Visible == true then
+			pagef:TweenSize(newsize, "InOut", "Sine", .14)
+			wait(.15)
+			pagef:TweenSize(off, "InOut", "Sine", .14)
+			farmingp.Visible = true
+			featsp.Visible = false
+			misc.Visible = false
+			farmingp.ZIndex = 5
+			
+		end
+	end)
+end
+coroutine.wrap(DVBYBY_fake_script)()
+local function YCJCJQ_fake_script() -- Misc.LocalScript 
+	local script = Instance.new('LocalScript', Misc)
+
+	local btn = script.Parent
+	local featsp = script.Parent.Parent.Parent.Parent.main.featsp
+	local miscp = script.Parent.Parent.Parent.Parent.main.miscp
+	local pagef = script.Parent.Parent.Parent.pagef
+	local off = UDim2.new(0, 283,0, 6)
+	local newsize = UDim2.new(0, 283,0, 183)
+	pagef.Size = off
+	local farmingp = script.Parent.Parent.Parent.farmingp
+	miscp.Visible = false
+	
+	btn.MouseButton1Click:Connect(function()
+		if featsp.Visible == true or farmingp.Visible == true  then
+			pagef:TweenSize(newsize, "InOut", "Sine", .14)
+			wait(.15)
+			pagef:TweenSize(off, "InOut", "Sine", .14)
+			miscp.Visible = true
+			featsp.Visible = false
+			farmingp.Visible = false
+			miscp.ZIndex = 5
+			
+		end
+	end)
+end
+coroutine.wrap(YCJCJQ_fake_script)()
+local function OZDNG_fake_script() -- TextButton_4.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_4)
+
+	local Button = script.Parent
+	_G.Toggleds = false
+	
+	local Player = game:GetService("Players").LocalPlayer
+	
+	Button.MouseButton1Click:Connect(function()
+		if _G.Toggleds == false then 
+			_G.Toggleds = true
+			Button.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
+			game.StarterGui:SetCore("SendNotification",{
+				Title = "Verdict Hub ™";
+				Text = "Bow Farm Enabled.";
+				Icon = "http://www.roblox.com/asset/?id=7394339207";
+				Duration = "3";
+			})
+			while wait(0.1) do
+				if _G.Toggleds == true then
+					local args = {[1] = 1,[2] = Vector3.new(-5920.2646484375, 455.17456054688, 7554.8666992188)}
+	
+					game:GetService("Players").LocalPlayer.Character:FindFirstChild("Magic Bow").LocalScript:FindFirstChild("Magic Bow"):FireServer(unpack(args))
+					if Player.bin.MagicEnergy.Value <= 100 and Player.bin.Level.Value >= 100 then
+	
+						local args = { [1] = "Charge"}
+	
+						game:GetService("ReplicatedStorage").Remotes.Charge:FireServer(unpack(args))
+					end
+					if Player.bin.MagicEnergy.Value == Player.bin.MagicPower.Value*5+25 then
+						local args = {   [1] = "ChargeEnd"}
+						game:GetService("ReplicatedStorage").Remotes.Charge:FireServer(unpack(args))
+					end
+				end
+			end
+		elseif _G.Toggleds == true  then
+			_G.Toggleds = false
+			Button.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+			game.StarterGui:SetCore("SendNotification",{
+				Title = "Verdict Hub ™";
+				Text = "Bow Farm Disabled.";
+				Icon = "http://www.roblox.com/asset/?id=7394339207";
+				Duration = "3";
+			})
+			local args = {   [1] = "ChargeEnd"}
+			game:GetService("ReplicatedStorage").Remotes.Charge:FireServer(unpack(args))
+		end
+	
+		while wait() do 
+			if _G.Toggleds == true and not Player.bin.MagicEnergy.Value <= 100 then
+				local args = {[1] = 1,[2] = Vector3.new(-5920.2646484375, 455.17456054688, 7554.8666992188)}
+	
+				game:GetService("Players").LocalPlayer.Character:FindFirstChild("Magic Bow").LocalScript:FindFirstChild("Magic Bow"):FireServer(unpack(args))
+			end
+		end
+	end)
+end
+coroutine.wrap(OZDNG_fake_script)()
+local function ZTWH_fake_script() -- TextButton_5.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_5)
+
+	local Button = script.Parent
+	local Toggle = false
+	
+	
+	Button.MouseButton1Click:Connect(function()
+		if Toggle == false then
+			Toggle = true
+			Button.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
+			game.StarterGui:SetCore("SendNotification",{
+				Title = "Verdict™";
+				Text = "Colossal Cutlass Farm is Enabled.";
+				Icon = "http://www.roblox.com/asset/?id=7394339207";
+				Duration = "2";
+			})
+			while wait(0.1) do
+				if Toggle == true then
+					local args = {[1] = "Slash",[2] = Vector3.new(-4816.8642578125, 568.79412841797, 8050.4125976563)}
+					game:GetService("Players").LocalPlayer.Character:FindFirstChild("Colossal Cutlass").LocalScript.Cutlass:FireServer(unpack(args))
+				end
+			end
+		elseif Toggle == true then
+			Toggle = false
+			Button.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+			game.StarterGui:SetCore("SendNotification",{
+				Title = "Verdict™";
+				Text = "Colossal Cutlass Farm is Disabled.";
+				Icon = "http://www.roblox.com/asset/?id=7394339207";
+				Duration = "2";
+			})
+		end			
+	end)
+end
+coroutine.wrap(ZTWH_fake_script)()
+local function MFKZ_fake_script() -- TextButton_6.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_6)
+
+	local Button = script.Parent
+	_G.Toggled = false
+	
+	local Player = game:GetService("Players").LocalPlayer
+	
+	Button.MouseButton1Click:Connect(function()
+		if _G.Toggled == false then 
+			_G.Toggled = true
+			Button.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
+			game.StarterGui:SetCore("SendNotification",{
+				Title = "Verdict™";
+				Text = "Dagger Farm Enabled.";
+				Icon = "http://www.roblox.com/asset/?id=7394339207";
+				Duration = "3";
+			})
+			while wait(0.1) do
+				if _G.Toggled == true then
+					local args = {  [1] = "Slash", [2] = Vector3.new(-2176.4926757813, 458.63775634766, 76.356307983398)}
+	
+					game:GetService("Players").LocalPlayer.Character:FindFirstChild("Magic Dagger").LocalScript:FindFirstChild("Magic Dagger"):FireServer(unpack(args))
+					if Player.bin.MagicEnergy.Value <= 25 and Player.bin.Level.Value >= 10 then
+	
+						local args = { [1] = "Charge"}
+	
+						game:GetService("ReplicatedStorage").Remotes.Charge:FireServer(unpack(args))
+					end
+					if Player.bin.MagicEnergy.Value == Player.bin.MagicPower.Value*5+25 then
+						local args = {   [1] = "ChargeEnd"}
+						game:GetService("ReplicatedStorage").Remotes.Charge:FireServer(unpack(args))
+					end
+				end
+			end
+		elseif _G.Toggled == true  then
+			_G.Toggled = false
+			Button.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+			game.StarterGui:SetCore("SendNotification",{
+				Title = "Verdict™";
+				Text = "Dagger Farm Disabled.";
+				Icon = "http://www.roblox.com/asset/?id=7394339207";
+				Duration = "3";
+			})
+			local args = {   [1] = "ChargeEnd"}
+			game:GetService("ReplicatedStorage").Remotes.Charge:FireServer(unpack(args))
+		end
+	
+		while wait() do 
+			if _G.Toggled == true and not Player.bin.MagicEnergy.Value <= 20 then
+				local args = {  [1] = "Slash", [2] = Vector3.new(-2176.4926757813, 458.63775634766, 76.356307983398)}
+	
+				game:GetService("Players").LocalPlayer.Character:FindFirstChild("Magic Dagger").LocalScript:FindFirstChild("Magic Dagger"):FireServer(unpack(args)) 
+			end
+		end
+	end)
+end
+coroutine.wrap(MFKZ_fake_script)()
+local function VDWQWS_fake_script() -- DaggerF.LocalScript 
+	local script = Instance.new('LocalScript', DaggerF)
+
+	local lbl = script.Parent
+	local Info = script.Parent.Parent.Parent.Info
+	local off = UDim2.new(0, 6,0, 13)
+	Info.Size = off
+	Info.Visible = false
+	local normsize = UDim2.new(0, 295,0, 13)
+	
+	lbl.MouseEnter:Connect(function()
+		Info.Visible = true
+		Info:TweenSize(normsize, "InOut", "Sine", 0.14)
+		lbl.MouseLeave:Connect(function()
+			Info.Visible = false
+			Info.Size = off
+		end)
+	end)
+end
+coroutine.wrap(VDWQWS_fake_script)()
+local function HEGE_fake_script() -- Newground.LocalScript 
+	local script = Instance.new('LocalScript', Newground)
+
+	local btn = script.Parent
+	local plr = game.Players.LocalPlayer
+	
+	btn.MouseButton1Click:Connect(function()
+		if workspace.Map.Islands:FindFirstChild("NewgroundIsland") then
+			plr.Character.HumanoidRootPart.CFrame = CFrame.new(-2268.69, 468.263, -138.5)
+		else
+			game.StarterGui:SetCore("SendNotification", {
+				Title = "Verdict™";
+				Text = "Join First Sea.";
+				Icon = "http://www.roblox.com/asset/?id=7394339207";
+				Duration = "2";
+			})
+		end
+	end)
+	
+end
+coroutine.wrap(HEGE_fake_script)()
+local function TWQLPV_fake_script() -- doom.LocalScript 
+	local script = Instance.new('LocalScript', doom)
+
+	local btn = script.Parent
+	local plr = game.Players.LocalPlayer
+	
+	btn.MouseButton1Click:Connect(function()
+		if workspace.Map.Islands:FindFirstChild("DoomIsland") then
+			plr.Character.HumanoidRootPart.CFrame = CFrame.new(-2077.62, 520.722, 1847.5)
+		else
+			game.StarterGui:SetCore("SendNotification", {
+				Title = "Verdict™";
+				Text = "Join First Sea.";
+				Icon = "http://www.roblox.com/asset/?id=7394339207";
+				Duration = "2";
+			})
+		end
+	end)
+	
+end
+coroutine.wrap(TWQLPV_fake_script)()
+local function AFPMGQH_fake_script() -- savaria.LocalScript 
+	local script = Instance.new('LocalScript', savaria)
+
+	local btn = script.Parent
+	local plr = game.Players.LocalPlayer
+	
+	btn.MouseButton1Click:Connect(function()
+		if workspace.Map.Islands:FindFirstChild("Savaria") then
+			plr.Character.HumanoidRootPart.CFrame = CFrame.new(1027.84, 475.777, 1691.16)
+		else
+			game.StarterGui:SetCore("SendNotification", {
+				Title = "Verdict™";
+				Text = "Join First Sea.";
+				Icon = "http://www.roblox.com/asset/?id=7394339207";
+				Duration = "2";
+			})
+		end
+	end)
+	
+end
+coroutine.wrap(AFPMGQH_fake_script)()
+local function AROZ_fake_script() -- skyisle.LocalScript 
+	local script = Instance.new('LocalScript', skyisle)
+
+	local btn = script.Parent
+	local plr = game.Players.LocalPlayer
+	
+	btn.MouseButton1Click:Connect(function()
+		if workspace.Map.Islands:FindFirstChild("DoomIsland") then
+			plr.Character.HumanoidRootPart.CFrame = CFrame.new(3212.42, 1561.29, -239.32)
+		else
+			game.StarterGui:SetCore("SendNotification", {
+				Title = "Verdict™";
+				Text = "Join First Sea.";
+				Icon = "http://www.roblox.com/asset/?id=7394339207";
+				Duration = "2";
+			})
+		end
+	end)
+	
+end
+coroutine.wrap(AROZ_fake_script)()
+local function TKJJK_fake_script() -- borealis.LocalScript 
+	local script = Instance.new('LocalScript', borealis)
+
+	local btn = script.Parent
+	local plr = game.Players.LocalPlayer
+	
+	btn.MouseButton1Click:Connect(function()
+		if workspace.Map.Islands:FindFirstChild("BorealisShipwreck") then
+			plr.Character.HumanoidRootPart.CFrame = CFrame.new(-5577.46, 440.42, -4222.2)
+		else
+			game.StarterGui:SetCore("SendNotification", {
+				Title = "Verdict™";
+				Text = "Join Second Sea.";
+				Icon = "http://www.roblox.com/asset/?id=7394339207";
+				Duration = "2";
+			})
+		end
+	end)
+	
+end
+coroutine.wrap(TKJJK_fake_script)()
+local function TKAXBHM_fake_script() -- oblitesco.LocalScript 
+	local script = Instance.new('LocalScript', oblitesco)
+
+	local btn = script.Parent
+	local plr = game.Players.LocalPlayer
+	
+	btn.MouseButton1Click:Connect(function()
+		if workspace.Map.Islands:FindFirstChild("Oblitesco") then
+			plr.Character.HumanoidRootPart.CFrame = CFrame.new(5593.67, 442.164, -4463.1)
+		else
+			game.StarterGui:SetCore("SendNotification", {
+				Title = "Verdict™";
+				Text = "Join Second Sea.";
+				Icon = "http://www.roblox.com/asset/?id=7394339207";
+				Duration = "2";
+			})
+		end
+	end)
+	
+end
+coroutine.wrap(TKAXBHM_fake_script)()
+local function NVLE_fake_script() -- Altavista.LocalScript 
+	local script = Instance.new('LocalScript', Altavista)
+
+	local btn = script.Parent
+	local plr = game.Players.LocalPlayer
+	
+	btn.MouseButton1Click:Connect(function()
+		if workspace.Map.Islands:FindFirstChild("DoomIsland") then
+			plr.Character.HumanoidRootPart.CFrame = CFrame.new(11100.7, 439.508, -6113.2)
+		else
+			game.StarterGui:SetCore("SendNotification", {
+				Title = "Verdict™";
+				Text = "Join Second Sea.";
+				Icon = "http://www.roblox.com/asset/?id=7394339207";
+				Duration = "2";
+			})
+		end
+	end)
+	
+end
+coroutine.wrap(NVLE_fake_script)()
+local function CZZVSU_fake_script() -- thirdsea.LocalScript 
+	local script = Instance.new('LocalScript', thirdsea)
+
+	local TS = game:GetService("TeleportService")
+	
+	
+	
+	local Button = script.Parent
+	
+	Button.MouseButton1Click:Connect(function()
+		pcall(function()
+			TS:Teleport(4592306011)
+		end)
+	end)
+end
+coroutine.wrap(CZZVSU_fake_script)()
+local function QYMR_fake_script() -- secondsea.LocalScript 
+	local script = Instance.new('LocalScript', secondsea)
+
+	local TS = game:GetService("TeleportService")
+	local Button = script.Parent
+	
+	Button.MouseButton1Click:Connect(function()
+		pcall(function()
+			TS:Teleport(4180357500)
+		end)
+	end)
+end
+coroutine.wrap(QYMR_fake_script)()
+local function DNJAKSA_fake_script() -- northwestern.LocalScript 
+	local script = Instance.new('LocalScript', northwestern)
+
+	local lbl = script.Parent
+	local Info = script.Parent.Parent.Parent.Info3
+	local off = UDim2.new(0, 6,0, 13)
+	Info.Size = off
+	Info.Visible = false
+	local normsize = UDim2.new(0, 295,0, 13)
+	
+	lbl.MouseEnter:Connect(function()
+		Info.Visible = true
+		Info:TweenSize(normsize, "InOut", "Sine", 0.14)
+		lbl.MouseLeave:Connect(function()
+			Info.Visible = false
+			Info.Size = off
+		end)
+	end)
+end
+coroutine.wrap(DNJAKSA_fake_script)()
+local function FETEOH_fake_script() -- northwestern.LocalScript 
+	local script = Instance.new('LocalScript', northwestern)
+
+	local TS = game:GetService("TeleportService")
+	local plr = game.Players.LocalPlayer
+	
+	
+	local Button = script.Parent
+	
+	Button.MouseButton1Click:Connect(function()
+		pcall(function()
+			TS:Teleport()
+		
+		
+		end)
+	end)
+end
+coroutine.wrap(FETEOH_fake_script)()
+local function GEEM_fake_script() -- firstsea.LocalScript 
+	local script = Instance.new('LocalScript', firstsea)
+
+	local TS = game:GetService("TeleportService")
+	
+	
+	
+	local Button = script.Parent
+	
+	Button.MouseButton1Click:Connect(function()
+		pcall(function()
+			TS:Teleport(3099893649)
+		end)
+	end)
+end
+coroutine.wrap(GEEM_fake_script)()
+local function PQYDUEM_fake_script() -- icecrown.LocalScript 
+	local script = Instance.new('LocalScript', icecrown)
+
+	local btn = script.Parent
+	local plr = game.Players.LocalPlayer
+	
+	btn.MouseButton1Click:Connect(function()
+		if workspace.Map.Islands:FindFirstChild("IceCrownIsland") then
+			plr.Character.HumanoidRootPart.CFrame = CFrame.new(-126.715, 870.031, -1807.)
+		else
+			game.StarterGui:SetCore("SendNotification", {
+				Title = "Verdict™";
+				Text = "Join First Sea.";
+				Icon = "http://www.roblox.com/asset/?id=7394339207";
+				Duration = "2";
+			})
+		end
+	end)
+end
+coroutine.wrap(PQYDUEM_fake_script)()
+local function YRVZ_fake_script() -- dawns.LocalScript 
+	local script = Instance.new('LocalScript', dawns)
+
+	local btn = script.Parent
+	local plr = game.Players.LocalPlayer
+	
+	btn.MouseButton1Click:Connect(function()
+		if workspace.Map.Islands:FindFirstChild("DawnsRefuge") then
+			plr.Character.HumanoidRootPart.CFrame = CFrame.new(3732.47, 458.733, -14110.)
+		else
+			game.StarterGui:SetCore("SendNotification", {
+				Title = "Verdict™";
+				Text = "Join Second Sea.";
+				Icon = "http://www.roblox.com/asset/?id=7394339207";
+				Duration = "2";
+			})
+		end
+	end)
+end
+coroutine.wrap(YRVZ_fake_script)()
+local function NHZTMZU_fake_script() -- mavist.LocalScript 
+	local script = Instance.new('LocalScript', mavist)
+
+	local btn = script.Parent
+	local plr = game.Players.LocalPlayer
+	
+	btn.MouseButton1Click:Connect(function()
+		if workspace.Map.Islands:FindFirstChild("MavistIsland") then
+			plr.Character.HumanoidRootPart.CFrame = CFrame.new(-693.478, 474.94, 6007.15)
+		else
+			game.StarterGui:SetCore("SendNotification", {
+				Title = "Verdict™";
+				Text = "Join First Sea.";
+				Icon = "http://www.roblox.com/asset/?id=7394339207";
+				Duration = "2";
+			})
+		end
+	end)
+end
+coroutine.wrap(NHZTMZU_fake_script)()
+local function ERQYFLY_fake_script() -- eve.LocalScript 
+	local script = Instance.new('LocalScript', eve)
+
+	local btn = script.Parent
+	local plr = game.Players.LocalPlayer
+	
+	btn.MouseButton1Click:Connect(function()
+		if workspace.Map.Islands:FindFirstChild("EveIsland") then
+			plr.Character.HumanoidRootPart.CFrame = CFrame.new(3119.7, 464.841, 4932.35)
+		else
+			game.StarterGui:SetCore("SendNotification", {
+				Title = "Verdict™";
+				Text = "Join First Sea.";
+				Icon = "http://www.roblox.com/asset/?id=7394339207";
+				Duration = "2";
+			})
+		end
+	end)
+end
+coroutine.wrap(ERQYFLY_fake_script)()
+local function XYUIE_fake_script() -- orange.LocalScript 
+	local script = Instance.new('LocalScript', orange)
+
+	local btn = script.Parent
+	local plr = game.Players.LocalPlayer
+	
+	btn.MouseButton1Click:Connect(function()
+		if workspace.Map.Islands:FindFirstChild("OrangeIsland") then
+			plr.Character.HumanoidRootPart.CFrame = CFrame.new(-3661.54, 448.12, -5518.0)
+		else
+			game.StarterGui:SetCore("SendNotification", {
+				Title = "Verdict™";
+				Text = "Join First Sea.";
+				Icon = "http://www.roblox.com/asset/?id=7394339207";
+				Duration = "2";
+			})
+		end
+	end)
+end
+coroutine.wrap(XYUIE_fake_script)()
+local function NTOO_fake_script() -- canopy.LocalScript 
+	local script = Instance.new('LocalScript', canopy)
+
+	
+	local btn = script.Parent
+	local plr = game.Players.LocalPlayer
+	
+	btn.MouseButton1Click:Connect(function()
+		if workspace.Map.Islands:FindFirstChild("CanopyIsland") then
+			plr.Character.HumanoidRootPart.CFrame = CFrame.new(6317.68, 464.669, -1660.7)
+		else
+			game.StarterGui:SetCore("SendNotification", {
+				Title = "Verdict™";
+				Text = "Join First Sea.";
+				Icon = "http://www.roblox.com/asset/?id=7394339207";
+				Duration = "2";
+			})
+		end
+	end)
+	
+end
+coroutine.wrap(NTOO_fake_script)()
+local function DYQP_fake_script() -- redwood.LocalScript 
+	local script = Instance.new('LocalScript', redwood)
+
+	local btn = script.Parent
+	local plr = game.Players.LocalPlayer
+	
+	btn.MouseButton1Click:Connect(function()
+		if workspace.Map.Islands:FindFirstChild("RedwoodIsland") then
+			plr.Character.HumanoidRootPart.CFrame = CFrame.new(-10742.5, 451.909, -4439.)
+		else
+			game.StarterGui:SetCore("SendNotification", {
+				Title = "Verdict™";
+				Text = "Join Third Sea.";
+				Icon = "http://www.roblox.com/asset/?id=7394339207";
+				Duration = "2";
+			})
+		end
+	end)
+	
+end
+coroutine.wrap(DYQP_fake_script)()
+
 else
 -- not whitelisted here
 end
